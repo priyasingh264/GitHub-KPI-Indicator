@@ -1,0 +1,395 @@
+/* Global Styles */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Hero Styles */
+
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero .container:not(:first-child) {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero .container:not(:first-child) .wrapper {
+  width: 100%;
+  max-width: 800px;
+}
+
+.hero .noUser {
+  position: absolute;
+  top: 100px;
+  color: red;
+  font-size: 34px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+/* Nav Styles */
+
+nav {
+  width: 100%;
+  padding: 14px 0;
+  background: #0366d6;
+}
+
+/* Form Styles */
+
+form input {
+  padding: 14px;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  background: #142b44;
+  color: orange;
+  width: 100%;
+  max-width: 300px;
+}
+
+form input::placeholder {
+  color: orange;
+}
+
+/* Followers Styles */
+
+.followersContainer {
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+}
+
+.followersContainer .followers {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+}
+
+.followersContainer .followers img {
+  width: 50px;
+  height: 50px;
+  display: block;
+  margin-right: 34px;
+  border-radius: 4px;
+}
+
+.followersContainer .followers p {
+  padding: 6px 0 0 0;
+  color: #0366d6;
+}
+
+/* Overview Styles */
+
+.overviewContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px 0 0 0;
+}
+
+.overviewContainer a {
+  color: #0366d6;
+  text-decoration: none;
+  height: 120px;
+  width: 100%;
+  max-width: 48%;
+  margin-bottom: 20px;
+}
+
+.overviewContainer a .overview {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.overviewContainer a .overview.overview-7,
+.overviewContainer a .overview.overview-8 {
+  margin-bottom: 0;
+}
+
+.overviewContainer a .overview h2 {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.overviewContainer a .overview p {
+  display: flex;
+  align-items: center;
+}
+
+.overviewContainer a .overview p span {
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: yellow;
+  color: yellow;
+  margin-right: 8px;
+}
+
+/* Repos Container Styles */
+
+.reposContainer {
+  width: 100%;
+  overflow: auto;
+  height: 680px;
+  max-height: 680px;
+}
+
+.reposContainer::-webkit-scrollbar {
+  width: 1em;
+}
+
+.reposContainer::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px #142b44;
+  border-radius: 50px;
+}
+
+.reposContainer::-webkit-scrollbar-thumb {
+  background: #3e556f;
+  outline: 1px solid slategrey;
+  border-radius: 50px;
+}
+
+/* Repos Nav Styles */
+
+.reposNav {
+  width: 100%;
+  display: flex;
+  color: #24292e;
+  border-bottom: 1px solid #d1d5da;
+}
+
+.reposNav a {
+  padding: 0 20px 17px 20px;
+  text-decoration: none;
+  display: block;
+}
+
+.reposNav a.active {
+  border-bottom: 2px solid orange;
+  color: #0366d6;
+}
+
+/* Repos Styles */
+
+.reposWrap {
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.reposWrap:not(:last-of-type) {
+  border-bottom: 1px solid #e1e4e8;
+}
+
+.reposWrap .repos {
+  width: 100%;
+  padding: 20px 0;
+}
+
+.reposWrap .repos > p {
+  color: #0366d6;
+}
+
+.reposWrap .repos .repoInfo {
+  display: flex;
+  padding: 16px 0 0 0;
+}
+
+.reposWrap .repos .repoInfo p {
+  color: #586069;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.reposWrap .repos .repoInfo p span {
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: yellow;
+  color: yellow;
+  margin-right: 8px;
+}
+
+/* User Styles */
+
+.user {
+  width: 100%;
+  max-width: 300px;
+}
+
+.user .userContainer .imgContainer img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.user .userContainer .userRow {
+  overflow: hidden;
+}
+
+.user .userContainer .userRow .userInfo {
+  padding: 14px 0;
+}
+
+.user .userContainer .userRow .userDesc p {
+  margin: 20px 0;
+  word-wrap: break-word;
+}
+
+.user .userContainer .userRow .userLinks {
+  padding: 14px 0;
+}
+
+.user .userContainer .userRow .userLinks i {
+  margin-right: 14px;
+  color: #0366d6;
+}
+
+.user .userContainer .userRow .userLinks i a {
+  text-decoration: none;
+  display: inline-block;
+  color: #0366d6;
+  padding: 6px 0 0 0;
+  transition: color 400ms ease-in-out;
+  word-wrap: break-word;
+}
+
+.user .userContainer .userRow .userLinks i a:hover {
+  color: #0a4a92;
+}
+
+/* Media Queries */
+
+@media (max-width: 670px) {
+  .overviewContainer {
+    flex-direction: column;
+  }
+  .overviewContainer a {
+    max-width: 94%;
+  }
+  .reposContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .reposContainer::-webkit-scrollbar {
+    width: 8px;
+  }
+  .reposContainer a {
+    max-width: 94%;
+    margin: 0 auto;
+  }
+  .user .useContainer {
+    display: flex;
+    justify-content: space-between;
+  }
+  .user .useContainer .imgContainer {
+    width: 100%;
+    max-width: 40%;
+    height: 150px;
+  }
+  .user .useContainer .imgContainer img {
+    width: 100%;
+    height: 100%;
+  }
+  .user .useContainer .userRow {
+    width: 100%;
+    max-width: 56%;
+  }
+  .user .useContainer .userRow .userInfo,
+  .user .useContainer .userRow .userLinks {
+    padding: 0;
+  }
+  .user .useContainer .userRow .userDesc p {
+    margin: 12px 0;
+  }
+}
+
+@media (min-width: 671px) and (max-width: 989px) {
+  .user .userContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .user .userContainer .imgContainer {
+    width: 100%;
+    max-width: 40%;
+  }
+  .user .userContainer .imgContainer img {
+    width: 100%;
+    height: 100%;
+  }
+  .user .userContainer .userRow {
+    width: 100%;
+    max-width: 55%;
+  }
+  .user .userContainer .userRow .userInfo,
+  .user .userContainer .userRow .userLinks {
+    padding: 0;
+  }
+}
+
+@media (max-width: 989px) {
+  .hero .container:not(:first-child) {
+    padding: 30px 0;
+    flex-direction: column;
+  }
+  .hero .container:not(:first-child) .wrapper {
+    max-width: 100%;
+    margin: 50px 0 0 0;
+  }
+  .user {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 990px) and (max-width: 1200px) {
+  .user .userContainer .userRow .userDesc p {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 990px) and (max-width: 1250px) {
+  .hero .container:not(:first-child) .wrapper {
+    max-width: 70%;
+  }
+  .user {
+    max-width: 26%;
+  }
+}
+
+@media (max-width: 1250px) {
+  .container {
+    max-width: 90%;
+  }
+}
